@@ -140,6 +140,9 @@ class SquiggleRead
         // replace the pore models with the models specified in the map
         void replace_models(const ModelMap& map);
 
+        // returns true if this read has events for this strand
+        bool has_events_for_strand(size_t strand_idx) const { return !this->events[strand_idx].empty(); }
+
         //
         // Data
         //

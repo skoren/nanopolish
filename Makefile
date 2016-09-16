@@ -9,9 +9,9 @@ SUBDIRS := src src/hmm src/thirdparty src/common src/alignment
 
 #Basic flags every build needs
 LIBS=-lz
-CXXFLAGS = -g -O3
+CXXFLAGS = -g
 CXXFLAGS += -std=c++11 -fopenmp
-CFLAGS=-O3
+CFLAGS=
 CXX=g++
 CC=gcc
 HDF5=install
@@ -36,7 +36,7 @@ endif
 
 # Bulild and link the libhts submodule
 HTS_LIB=./htslib/libhts.a
-HTS_INCLUDE=-I./htslib
+HTS_INCLUDE=-I./htslib/
 
 # Include the header-only fast5 library
 FAST5_INCLUDE=-I./fast5

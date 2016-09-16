@@ -289,3 +289,4 @@ void SquiggleRead::replace_models(const ModelMap& map) {
         }
     }
 }
+
